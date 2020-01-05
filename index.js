@@ -58,18 +58,20 @@ function asepriteLoader(source) {
       animDirection: tag.animDirection,
       color: tag.color,
     })),
-    palette: {
-      paletteSize: ase.palette.paletteSize,
-      firstColor: ase.palette.firstColor,
-      lastColor: ase.palette.lastColor,
-      colors: ase.palette.colors.map((color) => ({
-        red: color.red,
-        green: color.green,
-        blue: color.blue,
-        alpha: color.alpha,
-        name: color.name,
-      })),
-    },
+    palette: ase.palette
+      ? {
+          paletteSize: ase.palette.paletteSize,
+          firstColor: ase.palette.firstColor,
+          lastColor: ase.palette.lastColor,
+          colors: ase.palette.colors.map((color) => ({
+            red: color.red,
+            green: color.green,
+            blue: color.blue,
+            alpha: color.alpha,
+            name: color.name,
+          })),
+        }
+      : undefined,
   };
 
   return `

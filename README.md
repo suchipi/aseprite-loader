@@ -10,7 +10,7 @@ declare namespace AsepriteLoader {
     frames: Array<AsepriteLoader.Frame>;
     layers: Array<AsepriteLoader.Layer>;
     tags: Array<AsepriteLoader.Tag>;
-    palette: AsepriteLoader.Palette;
+    palette?: AsepriteLoader.Palette;
     fileSize: number;
     width: number;
     height: number;
