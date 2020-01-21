@@ -1,6 +1,6 @@
 const path = require("path");
 const zlib = require("zlib");
-const Aseprite = require("ase-parser");
+const Aseprite = require("@suchipi/ase-parser");
 
 function asepriteLoader(source) {
   const ase = new Aseprite(source, path.basename(this.resourcePath));

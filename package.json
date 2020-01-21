@@ -1,9 +1,9 @@
 {
   "name": "aseprite-loader",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "ase-parser": "^0.0.10"
+    "@suchipi/ase-parser": "^0.0.10"
   }
 }
